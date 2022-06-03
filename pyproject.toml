@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "flight-scrapper"
+version = "0.1.0"
+description = ""
+authors = ["Angelina Tresca <angelina.tresca@mercadolibre.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+Scrapy = "^2.6.1"
+selenium = "^4.2.0"
+beautifulsoup4 = "^4.11.1"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^22.3.0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
