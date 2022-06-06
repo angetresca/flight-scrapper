@@ -6,9 +6,14 @@ from urllib.parse import parse_qs
 import os
 from flight_scrapper.items import FlightScrapperItem
 from dotenv import load_dotenv
-from .urls import AA_URLS
 
 load_dotenv()
+
+destination = os.getenv("DESTINATION")
+if destination == "NY":
+   from .urls_ny import AA_URLS
+elif destination == "BSAS":
+    from.urls_bsas import AA_URLS
 
 logger = logging.getLogger("AerolineasLogger")
 
