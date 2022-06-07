@@ -55,9 +55,9 @@ class DespegarSpider(scrapy.Spider):
     def parse(self, response, **kwargs):
         self.req_number += 1
 
-        responses_path = os.getenv("RESPONSES_PATH")
-        with open(f"{responses_path}/dsp_response_{self.req_number}.json", "w+") as f:
-            f.write(response.text)
+        # responses_path = os.getenv("RESPONSES_PATH")
+        # with open(f"{responses_path}/dsp_response_{self.req_number}.json", "w+") as f:
+        #     f.write(response.text)
 
         response = json.loads(response.text)
         items = response.get("items")
@@ -72,6 +72,7 @@ class DespegarSpider(scrapy.Spider):
                         for segment in route_info.get("segments"):
                             route = f"{route_info.get('arrival').get('airportCode')}-{route_info.get('departure').get('airportCode')}"
                             yield FlightScrapperItem(
+                                airline=self.name,
                                 route=route,
                                 day=segment.get("departure").get("date"),
                                 is_best_offer="N/A",

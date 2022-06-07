@@ -8,6 +8,7 @@ import scrapy
 
 class FlightScrapperItem(scrapy.Item):
     # define the fields for your item here like:
+    airline = scrapy.Field()
     route = scrapy.Field()
     day = scrapy.Field()
     is_best_offer = scrapy.Field()

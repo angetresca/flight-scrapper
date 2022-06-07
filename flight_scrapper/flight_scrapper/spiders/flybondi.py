@@ -65,6 +65,7 @@ class FlybondiSpider(scrapy.Spider):
             route = offer.get("id")[:7]
 
             yield FlightScrapperItem(
+                airline=self.name,
                 route=route,
                 day=offer.get("departure")[:10],
                 is_best_offer="N/A",
@@ -78,6 +79,7 @@ class FlybondiSpider(scrapy.Spider):
             route = offer.get("id")[:7]
 
             yield FlightScrapperItem(
+                airline=self.name,
                 route=route,
                 day=offer.get("departure")[:10],
                 is_best_offer="N/A",

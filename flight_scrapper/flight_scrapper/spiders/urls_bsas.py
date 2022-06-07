@@ -27,13 +27,8 @@ FLYBONDI_BODY = {
 
 DESPEGAR_URLS = [
     "https://www.despegar.com.ar/shop/flights-busquets/api/v1/web/search?adults=1&children=0&infants=0&limit=10&site=AR&channel=site&from=COR&to=BUE&departureDate=2022-10-25&viewMode=CLUSTER&language=es_AR&airlineSummary=false&chargesDespegar=false&user=fe9df6e1-8879-4645-9df6-e188794645f6&flow=SEARCH&di=1-0&clientType=WEB&disambiguationType=NO_DISAMBIGUATION&initialOrigins=COR&initialDestinations=BUE&pageViewId=shopping-flightsc515bc6e-7a12-4611-a4af-9c332beb44f2&incomeType=UNKNOWN",
-
     "https://www.despegar.com.ar/shop/flights-busquets/api/v1/web/search?adults=1&children=0&infants=0&limit=10&site=AR&channel=site&from=BUE&to=COR&departureDate=2022-10-27&viewMode=CLUSTER&language=es_AR&airlineSummary=false&chargesDespegar=false&user=fe9df6e1-8879-4645-9df6-e188794645f6&flow=SEARCH&di=1-0&clientType=WEB&disambiguationType=NO_DISAMBIGUATION&initialOrigins=COR&initialDestinations=BUE&pageViewId=shopping-flightsc515bc6e-7a12-4611-a4af-9c332beb44f2&incomeType=UNKNOWN",
-
     "https://www.despegar.com.ar/shop/flights-busquets/api/v1/web/search?adults=1&children=0&infants=0&limit=10&site=AR&channel=site&from=BUE&to=COR&departureDate=2022-10-28&viewMode=CLUSTER&language=es_AR&airlineSummary=false&chargesDespegar=false&user=fe9df6e1-8879-4645-9df6-e188794645f6&flow=SEARCH&di=1-0&clientType=WEB&disambiguationType=NO_DISAMBIGUATION&initialOrigins=COR&initialDestinations=BUE&pageViewId=shopping-flightsc515bc6e-7a12-4611-a4af-9c332beb44f2&incomeType=UNKNOWN",
-
     "https://www.despegar.com.ar/shop/flights-busquets/api/v1/web/search?adults=1&children=0&infants=0&limit=10&site=AR&channel=site&from=BUE&to=COR&departureDate=2022-10-29&viewMode=CLUSTER&language=es_AR&airlineSummary=false&chargesDespegar=false&user=fe9df6e1-8879-4645-9df6-e188794645f6&flow=SEARCH&di=1-0&clientType=WEB&disambiguationType=NO_DISAMBIGUATION&initialOrigins=COR&initialDestinations=BUE&pageViewId=shopping-flightsc515bc6e-7a12-4611-a4af-9c332beb44f2&incomeType=UNKNOWN",
-
     "https://www.despegar.com.ar/shop/flights-busquets/api/v1/web/search?adults=1&children=0&infants=0&limit=10&site=AR&channel=site&from=BUE&to=COR&departureDate=2022-10-30&viewMode=CLUSTER&language=es_AR&airlineSummary=false&chargesDespegar=false&user=fe9df6e1-8879-4645-9df6-e188794645f6&flow=SEARCH&di=1-0&clientType=WEB&disambiguationType=NO_DISAMBIGUATION&initialOrigins=COR&initialDestinations=BUE&pageViewId=shopping-flightsc515bc6e-7a12-4611-a4af-9c332beb44f2&incomeType=UNKNOWN",
-
 ]

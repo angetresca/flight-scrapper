@@ -101,6 +101,7 @@ class AerolineasArgSpider(scrapy.Spider):
             lowest_offer = self.get_lowest_offer(offer.get("offers"))
 
             yield FlightScrapperItem(
+                airline=self.name,
                 route=routes[0],
                 day=departure_date,
                 is_best_offer=offer.get("bestOffer", False),
@@ -115,6 +116,7 @@ class AerolineasArgSpider(scrapy.Spider):
             lowest_offer = self.get_lowest_offer(offer.get("offers"))
 
             yield FlightScrapperItem(
+                airline=self.name,
                 route=routes[1],
                 day=return_date,
                 is_best_offer=offer.get("bestOffer", False),
