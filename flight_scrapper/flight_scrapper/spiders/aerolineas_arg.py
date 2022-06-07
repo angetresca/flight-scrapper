@@ -70,28 +70,6 @@ class AerolineasArgSpider(scrapy.Spider):
 
         return [departure_date, return_date]
 
-    def create_item(
-        self,
-        route: str,
-        departure_date: str,
-        return_date: str,
-        is_best_offer: bool,
-        total_duration: str,
-        offer_id: str,
-        seats_available: int,
-        total_fare: int,
-    ) -> FlightScrapperItem:
-        return FlightScrapperItem(
-            route=route,
-            departure_date=departure_date,
-            is_best_offer=is_best_offer,
-            return_date=return_date,
-            total_duration=total_duration,
-            offer_id=offer_id,
-            seats_available=seats_available,
-            total_fare=total_fare,
-        )
-
     def parse(self, response, **kwargs):
         self.req_number += 1
 
